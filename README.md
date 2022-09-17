@@ -6,7 +6,7 @@ A Scoop bucket for software not found elsewhere.
 
 Based on the template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
-How do I install these manifests?
+How do I install these [manifests](./bucket)?
 ---------------------------------
 
 To add this bucket, run `scoop bucket add astrel-bucket https://github.com/ASTRELION/astrel-bucket`. To install, do `scoop install <manifest>`.

@@ -20,17 +20,17 @@
         ]
     ],
     "checkver": {
-        "url": "https://godotengine.org/news",
-        "regex": "Dev snapshot: Godot (?<ver>[\\d.]+) beta (?<alpha>[\\d.]+)",
+        "url": "https://godotengine.org/article/dev-snapshot-godot-4-0-beta-1",
+        "regex": "download (?<ver>[\\d.]+) beta (?<beta>[\\d.]+)",
         "replace": "${1}-beta${2}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.tuxfamily.org/godotengine/$matchVer/beta$matchAlpha/Godot_v$version_win64.exe.zip"
+                "url": "https://downloads.tuxfamily.org/godotengine/$matchVer/beta$matchBeta/Godot_v$version_win64.exe.zip"
             },
             "32bit": {
-                "url": "https://downloads.tuxfamily.org/godotengine/$matchVer/beta$matchAlpha/Godot_v$version_win32.exe.zip"
+                "url": "https://downloads.tuxfamily.org/godotengine/$matchVer/beta$matchBeta/Godot_v$version_win32.exe.zip"
             }
         }
     }

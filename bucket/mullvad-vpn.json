@@ -3,18 +3,19 @@
     "description": "An open-source VPN client.",
     "homepage": "https://mullvad.net",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/mullvad/mullvadvpn-app/releases/2022.3/MullvadVPN-2022.3.exe",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2022.3/MullvadVPN-2022.3.exe",
+        }
+    },
     "checkver": {
         "github": "https://github.com/mullvad/mullvadvpn-app"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/mullvad/mullvadvpn-app/releases/$version/MullvadVPN-$version.exe"
+                "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/$version/MullvadVPN-$version.exe"
             }
-        },
-        "hash": {
-            "url": "$baseurl/MullvadVPN-$version.exe.asc"
         }
     }
 }

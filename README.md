@@ -16,13 +16,13 @@ Based on the template bucket for [Scoop](https://scoop.sh), the Windows command-
 
 ## Add the bucket
 
-```shell
+```
 scoop bucket add astrel-bucket https://github.com/ASTRELION/astrel-bucket
 ```
 
 ## Install a manifest
 
-```shell
+```
 scoop install <manifest-name>
 ```
 

@@ -3,19 +3,31 @@
     "description": "An open-source VPN client.",
     "homepage": "https://mullvad.net",
     "license": "GPL-3.0-only",
+    "depends": "gpg4win",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2022.4/MullvadVPN-2022.4.exe",
+            "url": [
+                "https://github.com/mullvad/mullvadvpn-app/releases/download/2022.4/MullvadVPN-2022.4.exe",
+                "https://github.com/mullvad/mullvadvpn-app/releases/download/2022.4/MullvadVPN-2022.4.exe.asc"
+            ],
             "hash": "d1e6ee73d0e5e0dc37aaddf9241f95562462886a248c714747b1dcdde3f88859"
         }
     },
+    "pre_install": [
+        "curl https://mullvad.net/media/mullvad-code-signing.asc -o $dir/MullvadVPN-signing.asc",
+        "gpg --import $dir/MullvadVPN-signing.asc",
+        "gpg --verify $dir/MullvadVPN*.exe.asc"
+    ],
     "checkver": {
         "github": "https://github.com/mullvad/mullvadvpn-app"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/$version/MullvadVPN-$version.exe"
+                "url": [
+                    "https://github.com/mullvad/mullvadvpn-app/releases/download/$version/MullvadVPN-$version.exe",
+                    "https://github.com/mullvad/mullvadvpn-app/releases/download/$version/MullvadVPN-$version.exe.asc"
+                ]
             }
         }
     }

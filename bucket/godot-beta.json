@@ -1,16 +1,16 @@
 {
-    "version": "4.0-beta1",
+    "version": "4.0-beta2",
     "description": "A feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface (BETA release).",
     "homepage": "https://godotengine.org/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.tuxfamily.org/godotengine/4.0/beta1/Godot_v4.0-beta1_win64.exe.zip",
-            "hash": "06ba2193f7f6cc21d17693a4d47263f1a65847718f45983b134ce8f7bb9edef8"
+            "url": "https://downloads.tuxfamily.org/godotengine/4.0/beta2/Godot_v4.0-beta2_win64.exe.zip",
+            "hash": "01ba19e66072fe2dd680e7d3f174cb6ddcd3c1ee7106ac43b5dd40432456f857"
         },
         "32bit": {
-            "url": "https://downloads.tuxfamily.org/godotengine/4.0/beta1/Godot_v4.0-beta1_win32.exe.zip",
-            "hash": "0f1557d75daab31ead27965446d3c3bb68777b6c3eead07b0028b5568f538fe3"
+            "url": "https://downloads.tuxfamily.org/godotengine/4.0/beta2/Godot_v4.0-beta2_win32.exe.zip",
+            "hash": "b62f447ab94394754b3fbf4bdb898141bfe121641f64d2ff6808972fdd392c26"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\\Godot_*.exe\" | Rename-Item -NewName \"$dir\\godot.exe\"",

@@ -9,7 +9,6 @@ Based on the template bucket for [Scoop](https://scoop.sh), the Windows command-
 
 # Manifests
 
-- [godot-beta](./bucket/godot-beta.json)
 - [mullvad-vpn](./bucket/mullvad-vpn.json)
 
 # How do I install these [manifests](#manifests)?
